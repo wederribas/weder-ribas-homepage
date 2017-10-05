@@ -1,0 +1,42 @@
+body {
+    font-family: "Source Sans Pro","Helvetica","Arial",sans-serif;
+}
+
+.btn-bd-yellow {
+	font-weight:500;
+	color:#ffe484;
+	background-color: #343a40;
+	border-color:#ffe484;
+}
+
+.btn-bd-yellow:active,
+.btn-bd-yellow:hover {
+	color:#2a2730;
+	background-color:#ffe484;
+	border-color:#ffe484
+}
+
+.navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.container h1 {
+	font-weight: 900;
+}
+
+.container p {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container p {
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container p {
+    font-size: 20px;
+  }
+}
