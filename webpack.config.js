@@ -11,8 +11,18 @@ var config = {
   },
   module: {
     rules: [
-      { test: /\.(js)$/, use: 'babel-loader' },
-      { test: /\.css$/, use: ['style-loader', 'css-loader'] }
+      {
+        test: /\.(js)$/,
+        loader: 'babel-loader'
+      },
+      {
+        test: /\.css$/,
+        loader: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(gif|jpe?g|png|ico)$/,
+        loader: 'url-loader?limit=10000'
+      },
     ]
   },
   devServer: {
@@ -20,7 +30,8 @@ var config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'app/index.html'
+      template: 'app/index.html',
+      favicon: 'app/images/favicon.ico'
     })
   ]
 }
