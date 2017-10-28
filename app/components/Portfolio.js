@@ -21,7 +21,7 @@ class Portfolio extends React.Component {
               title='My Homepage'
               image={require('../images/homepage.png')}
               bodyText='My personal homepage. Built with React, Redux and Bootstrap.'
-              link={'https://wederribas.firebaseapp.com'}
+              link={'https://weder-ribas.firebaseapp.com'}
               linkText='Access it live!'/>
             <Card
               title='Movies Trailers'
