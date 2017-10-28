@@ -1,13 +1,11 @@
-const React = require('react');
-const ReactRouter = require('react-router-dom');
-const Router = ReactRouter.BrowserRouter;
-const Route = ReactRouter.Route;
-const Switch = ReactRouter.Switch;
+import React from 'react';
+import ReactRouter from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-const Nav = require('./Nav');
-const Home = require('./Home');
-const Portfolio = require('./Portfolio');
-const About = require('./About');
+import Nav from './Nav';
+import Home from './Home';
+import Portfolio from './Portfolio';
+import About from './About';
 
 class App extends React.Component {
   render() {

@@ -1,5 +1,5 @@
-const React = require('react');
-const NavLink = require('react-router-dom').NavLink;
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const socialMediaLink = {
   'github': 'https://github.com/wederribas',
@@ -72,4 +72,4 @@ class Nav extends React.Component {
   }
 }
 
-module.exports = Nav;
+export default Nav;

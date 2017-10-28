@@ -1,12 +1,11 @@
-const React = require('react');
-
-const introduction = {
-  'content': `I'm a software engineer, dedicated to write good code for amazing products.
-              Currently, I'm working at IBM Brazil as a Full Stack Web Developer. I've been developing
-              software for 4 years - and I'd love to help you become a better programmer.`
-}
+import React from 'react';
 
 class Home extends React.Component {
+  static Introduction = {
+    'content': `I'm a software engineer, dedicated to write good code for amazing products.
+                Currently, I'm working at IBM Brazil as a Full Stack Web Developer. I've been developing
+                software for 4 years - and I'd love to help you become a better programmer.`
+  }
   render() {
     return (
       <div className='container'>
@@ -19,7 +18,7 @@ class Home extends React.Component {
           <div className='col-lg-6 order-sm-2 order-lg-1'>
             <div className='p-sm-3 p-2'>
               <h1 className='title'>Hello! I'm Weder</h1>
-              <p className='common-text'>{introduction.content}</p>
+              <p className='common-text'>{Home.Introduction.content}</p>
             </div>
           </div>
         </div>
@@ -28,4 +27,4 @@ class Home extends React.Component {
   }
 }
 
-module.exports = Home;
+export default Home;

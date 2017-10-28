@@ -1,5 +1,5 @@
-const React = require('react');
-const Card = require('./Card');
+import React from 'react';
+import Card from './Card';
 
 class Portfolio extends React.Component {
   render() {
@@ -40,4 +40,4 @@ class Portfolio extends React.Component {
   }
 }
 
-module.exports = Portfolio;
+export default Portfolio;
