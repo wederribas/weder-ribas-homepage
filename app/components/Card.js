@@ -16,7 +16,7 @@ class Card extends React.Component {
   render() {
     const { image, title, bodyText, link, linkText } = this.props;
     return (
-      <div className='col-sm-6 col-md-4 col-lg-3 pt-3'>
+      <div className='col-sm-6 col-lg-3 pt-3'>
         <div className='card text-white bg-dark mb-3'>
           <img className='card-img-top' src={image} alt='Card image cap'/>
           <div className='card-body'>
