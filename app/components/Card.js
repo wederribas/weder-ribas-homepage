@@ -16,7 +16,7 @@ class Card extends React.Component {
   render() {
     const { image, title, bodyText, link, linkText } = this.props;
     return (
-      <div className='col-sm-6 col-lg-3 pt-3'>
+      <article className='col-sm-6 col-lg-3 pt-3'>
         <div className='card text-white bg-dark mb-3'>
           <img className='card-img-top' src={image} alt='Card image cap'/>
           <div className='card-body'>
@@ -25,7 +25,7 @@ class Card extends React.Component {
             <a href={link} className='btn btn-outline-light btn-sm'>{linkText}</a>
           </div>
         </div>
-      </div>
+      </article>
     )
   }
 }

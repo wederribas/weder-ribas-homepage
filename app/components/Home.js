@@ -8,7 +8,7 @@ class Home extends React.Component {
   }
   render() {
     return (
-      <div className='container'>
+      <main className='container'>
         <div className='row align-items-center .no-gutters'>
           <div className='col-lg-6 order-sm-1 order-lg-2'>
             <div className='p-sm-5 p-5 pl-lg-0'>
@@ -22,7 +22,7 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     )
   }
 }

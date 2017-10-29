@@ -4,7 +4,7 @@ import Card from './Card';
 class Portfolio extends React.Component {
   render() {
     return (
-      <div className='container'>
+      <main className='container'>
         <div className='row d-block text-center'>
           <h1 className='title pt-4 pb-2'>My Portfolio</h1>
           <h4 className='pb-3'>Take a look at my latest works</h4>
@@ -35,7 +35,7 @@ class Portfolio extends React.Component {
               link={'https://github.com/wederribas/bigpy'} />
           </div>
         </div>
-      </div>
+      </main>
     )
   }
 }
