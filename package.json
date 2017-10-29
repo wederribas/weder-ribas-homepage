@@ -4,7 +4,7 @@
   "description": "My personal professional portifolio website",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dashboard -- webpack-dev-server --open",
     "build": "NODE_ENV='production' webpack -p",
     "deploy": "npm run build && firebase deploy",
     "firebase-init": "firebase login && firebase init"
@@ -44,6 +44,7 @@
     "style-loader": "^0.16.1",
     "url-loader": "^0.5.9",
     "webpack": "^3.6.0",
+    "webpack-dashboard": "^1.0.0",
     "webpack-dev-server": "^2.9.0"
   }
 }

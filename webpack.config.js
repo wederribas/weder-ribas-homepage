@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const DashboardPlugin = require('webpack-dashboard/plugin');
 
 var config = {
   entry: './app/index.js',
@@ -32,7 +33,8 @@ var config = {
     new HtmlWebpackPlugin({
       template: 'app/index.html',
       favicon: 'app/images/favicon.ico'
-    })
+    }),
+    new DashboardPlugin()
   ]
 }
 
